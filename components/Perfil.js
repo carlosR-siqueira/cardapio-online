@@ -1,8 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import Infos from '../components/Infos';
-
+import { FaClock } from "react-icons/fa6"
+import { FaDollarSign } from "react-icons/fa6"
 import Link from 'next/link';
+
+
 const Perfil = () => (
 
 
@@ -16,7 +18,9 @@ const Perfil = () => (
       <h2 className="text-xl font-bold mt-4">PIZZARIA</h2>
     </div>
     <div className='infos-perfil'>
-      <Infos />
+      <p className="text-muted-foreground">Sem pedido mínimo<FaDollarSign /></p>
+      {/* <span className='dot'></span> */}
+      <p className="text-muted-foreground">Aberto até às 23:59 <FaClock /></p>
 
     </div>
     <div className="address mt-6 ">
